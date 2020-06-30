@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <title>Belajar Javascript</title>
+        <style>
+            #wrap{
+                background-color: black;
+                color: white;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <img src="img/Car.ico" alt="">
+        <div id="wrap"> </div>
+        <script>
+            /*1.memilih id wrap 
+            2.metode innerHTML = nulis konten
+            */
+
+            // deklarasi variabeld
+            // nama dimulai dengan huruf atau $ atau _ 
+            // nama hanya boleh mengandung huruf angka underscore _ dan dollar $
+            // nama itu case sensitiv
+            // ada reserved words yang tidak boleh dipaka
+            // var text = "sekolah koding"
+            // var text2 = " yang baru"
+            // var angka = 202;
+            // var angka2 = 323.456454;
+            // var angka3 = 322
+
+            // opertor matematika + - / * % 
+            // var angka_baru = angka2 - angka;
+            // angka_baru++; //menjumlahkan tambah 1
+            // angka2--; //mengurangi  1
+            // angka2 = angka + angka2;
+            //fungsinya sama dengan yang diatas
+            // angka2 += angka;
+
+            // Metode number toFixed() toString random() min(a, b, c) max(a, b, c)
+            // metode tofixed untuk menentukan angka dibelakang koma
+            //var angka_baru = angka2.toFixed(2)
+            //angka_baru = angka.toString() + angka2;  //mengganungkan angka dan menjadi string
+            //var angka_baru = Math.random().toFixed(2) + angka; //menentukan isi angka random
+            // var angka_baru = Math.max(angka, angka2, angka3)
+            //var angka_baru = Math.round(343.5443534) //membulatkan angka yang terdekat
+            //var angka_baru = Math.ceil(343.5443534);
+            // var angka_baru = Math.floor(343.5443534);
+
+            // var x = 100; //range atau jarak
+            // var y = 1; // batas minimal
+            // var angka_baru = Math.floor( Math.random() * x) +y;
+
+            //var nama = "Ahmadi madu";
+            //var hasil = nama.length; //menghitung jumlah karakter
+            //var hasil = nama.indexOf("d"); //mencari lokasi karakter
+            //var hasil = nama.search("ma"); //mencari lokasi text
+            //var hasil = nama.charAt(4); //mencari karakter dalam kalimat
+            //var hasil = nama.toUpperCase(); //Mmbuat kpital
+            //var hasil = nama.toLowerCase();
+            //var hasil = nama.replace("madu", "muhammad");
+            //var hasil = nama.substring(0,4); //mengambil kalimat awal akhir
+            //var hasil = nama.substr(0,7);//mengmbil kalimat awal panjang
+            // var nama = "120.887"; 
+            // //var hasil = parseInt(nama) + 10 ; //mengubah sting menjadi angka
+            // var hasil = parseFloat(nama) + 10 ;
+
+            // FUNGSI
+            //menulis fungsi
+            // function printText()
+            // {
+            //     var x = "sekolah koding"
+            //     document.getElementById("wrap").innerHTML = x;
+            // }
+            //memanggil fungsi
+           // printText();
+
+            //paramater fungsi
+            // function printText(nama, nama2)  //parameter
+            // {
+            //     var text = nama + nama2 + "yang baru";
+            //     document.getElementById("wrap").innerHTML = text;
+            // }
+            // printText("sekolah koding", "123");
+
+                //fungsi return
+            // function menjumlahkan(angka, angka2)
+            // {
+            //     return angka + angka2;
+            // }
+            // var text = menjumlahkan(10, 20);
+            // document.getElementById("wrap").innerHTML = text;
+
+                //scope variabel
+            //scope variabel global
+            // var text = "sekolah koding";
+            // function printText()
+            // {
+                //scope variabel lokal
+                // var text2 = "situs lain"
+                //global
+                // text2 = "situs lain"
+            // }
+            // printText();
+            // document.getElementById("wrap").innerHTML = text2;
+
+            //tipe data array
+            //array dimulai dari angka 0
+            // var kotak = ["hilma", "endy", "dika"];
+            // kotak[2]="rama"
+            // var text = "namanya adalah " + kotak[2]
+            // document.getElementById("wrap").innerHTML = text;
+
+
+            // var namaorang = ["rendi", "anggi", "dodit"];
+            // var namaorang2 = ["reni", "cantik"];
+            // var namaorang3 = ["loveyu"];
+            //var total = namaorang.concat(namaorang2, namaorang3);
+            // document.getElementById("wrap").innerHTML = namaorang.sort(); //mengurutkan sesuai abjad
+            // document.getElementById("wrap").innerHTML = namaorang.reverse(); //kebalikan
+            // document.getElementById("wrap").innerHTML = total.join(" | "); // join untuk memberi batas
+            
+            //namaorang.splice(0,1,"irma")//menambahkan dan menghapus
+            // namaorang.pop(); //menghapus bagian akhir
+            // namaorang.push("rida");//menambah bagian akhir
+            // namaorang.shift(); //menghapus bagian awal
+            // namaorang.unshift(); //menambahkan bagian awal
+
+
+                //boolean
+            // var x = true;
+            // var y = false;
+
+                //if dan else
+            // == samadengan, != tidak samadengan, <= kurang samadenga >= lebih besar samadengan
+            // && dan, || atau
+            // var programmer = 2500000;
+            // var desainer = 250;
+            // var barang = 2500;
+
+            // if ( programmer == barang ) {
+            //     alert('uang programmer tidak cukup, belanja batal')
+            // }else if( desainer == barang ){
+            //     alert('uang desainer cukup, belanja berhasil')
+            // }
+            // else if( programmer > barang ){
+            //     alert('uang programmer kebanyakan, belanja berhasil')
+            // }
+            // else{
+            //     alert('uang tidak ada yang cukup')
+            // }
+
+
+                //nested if
+            // var programmer = 3000;
+            // var desainer = 250;
+            // var barang = 2500;
+
+            // if ( programmer > barang){
+            //     if (programmer > barang*2){
+            //         alert("programmer dapat membeli 2 barng");
+            //     } else {
+            //         alert("programmer hanya bisa beli 1");
+            //     }
+            // }
+
+                //switch case
+            // var nama = "hillmanrr"
+            // switch(nama){
+            //     case "angi":
+            //     alert('namanya adalah angi');
+            //     break;
+
+            //     case "dani":
+            //     alert('namanya adalah dani');
+            //     break;
+
+            //     case "hillman":
+            //     alert('namanya adalah hilman');
+            //     break;
+
+            //     default :
+            //     alert('namanya tidak ditemukan');
+            // }
+
+                //Loop
+            // perulangan loop (mulai; sampai/syarat; perpindahan;)
+            // for(var i=0; i<7; i=i+2){
+            //     alert(i);
+            // }
+
+                //while
+            /* while(syarat){
+                apa yang mau dilakukan
+            }*/
+            // var i = 0
+            // var text = ""
+            // while (i < 7){
+            // text += "<br>angkanya adalah " + i;
+            // i++;
+            // }
+            // document.getElementById("wrap").innerHTML = text;
+
+                //do while
+            // var i = 9;
+            // var text = "";
+            // do{
+            //     text += "<br>angkanya adalah: " + i;
+            //     i++;
+            // }
+            // while(i<7);
+            // document.getElementById("wrap").innerHTML=text;
+
+
+                
+
+        </script>
+    </body>
+</html>

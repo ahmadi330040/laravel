@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/pattern.jpg);
+    padding-top: 20px;
+    }
+header {position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: white;
+        z-index: 99;
+        }
+header nav{
+    float: right;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav ul a {
+    float: left; padding: 20px; font-family: 'museo'; text-decoration: none;
+}
+header nav ul a:hover{text-decoration: underline;}
+section h1 {
+    text-align: center;
+    margin-top: 50px;
+    }
+section {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+footer {
+    background-color: black;
+    margin: auto;
+    height: 40px;
+    }
+h5  {
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+}
+article {
+    border-bottom:1px solid;
+}
+article a {
+    text-decoration: none;
+}
